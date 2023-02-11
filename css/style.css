@@ -95,9 +95,6 @@ a {
 /*-------------------HEADER---------------------------------------*/
 
 /*-------------------MAIN---------------------------------------*/
-.main {
-  flex: 1 1 auto;
-}
 
 .main-block__title {
   font-weight: 800;
@@ -148,10 +145,11 @@ a {
 .cards__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .cards__item {
   padding: 45px 40px;
-  max-width: 328px;
+  max-width: 228px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -180,6 +178,9 @@ a {
 /*-------------------CARDS--------------------------------------*/
 
 /*-------------------DESIGN-BLOCK--------------------------------------*/
+.design-block{
+  margin-bottom: 250px;
+}
 .design-block__header {
   display: flex;
   align-items: center;
@@ -238,6 +239,7 @@ a {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 .advices__main-title {
   font-weight: 700;
@@ -253,16 +255,39 @@ a {
   max-width: 471px;
   text-align: center;
 }
-.advices__item{
-  padding: 30px 30px;
-  max-width: 230px;
-  max-height: 138px;
+.advices__list{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 19px;
+
 }
+.advices__item {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.advices__desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:30px 30px;
+  max-width: 167px;
+  margin-right: 20px;
+  flex: 1 1 auto;
+}
+
 .advices__title {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #252b42;
+
 }
 .advices__text {
   font-size: 14px;
@@ -270,11 +295,15 @@ a {
   color: #737373;
 }
 .advices__img{
-  max-width: 230px;
+  min-width: 230px;
   max-height: 138px;
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: -129px;
+  left: 10px; */
 }
+
 /*-------------------ADVICES-BLOCK--------------------------------------*/
 
 /*-------------------FOOTER---------------------------------------*/
-.footer {
-}
