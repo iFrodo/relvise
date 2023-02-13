@@ -25,7 +25,9 @@ a {
   padding: 0 15px;
   box-sizing: content-box;
 }
-
+.flex-container {
+  display: flex;
+}
 /*-------------------HEADER---------------------------------------*/
 .header {
   width: 100%;
@@ -178,7 +180,7 @@ a {
 /*-------------------CARDS--------------------------------------*/
 
 /*-------------------DESIGN-BLOCK--------------------------------------*/
-.design-block{
+.design-block {
   margin-bottom: 250px;
 }
 .design-block__header {
@@ -233,6 +235,9 @@ a {
 /*-------------------DESIGN-BLOCK--------------------------------------*/
 
 /*-------------------ADVICES-BLOCK--------------------------------------*/
+.advices__container {
+  margin-bottom: 160px;
+}
 .advices__header {
   display: flex;
   align-items: center;
@@ -255,28 +260,26 @@ a {
   max-width: 471px;
   text-align: center;
 }
-.advices__list{
+.advices__list {
   display: flex;
   flex-direction: row;
   align-content: center;
   flex-wrap: wrap;
   gap: 19px;
-
 }
 .advices__item {
   /* position: relative; */
   display: flex;
   flex-direction: column;
- 
 }
 
-.advices__desc{
+.advices__desc {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  padding:30px 30px;
+  padding: 30px 30px;
   max-width: 167px;
   margin-right: 20px;
   flex: 1 1 auto;
@@ -287,14 +290,13 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #252b42;
-
 }
 .advices__text {
   font-size: 14px;
   line-height: 20px;
   color: #737373;
 }
-.advices__img{
+.advices__img {
   min-width: 230px;
   max-height: 138px;
   /* position: absolute;
@@ -306,4 +308,149 @@ a {
 
 /*-------------------ADVICES-BLOCK--------------------------------------*/
 
-/*-------------------FOOTER---------------------------------------*/
+/*-------------------ABOUT-BLOCK--------------------------------------*/
+.about__container {
+  margin-bottom: 100px;
+}
+.about__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.about__main-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #252b42;
+}
+.about__main-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  max-width: 471px;
+  text-align: center;
+}
+.about__video {
+  margin-right: 135px;
+}
+.about__desc {
+  display: flex;
+  flex-direction: column;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  color: #252b42;
+  margin-bottom: 10px;
+}
+.about__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #737373;
+  margin-bottom: 50px;
+}
+.about__item {
+  display: inline-flex;
+  align-items: center;
+}
+.about__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.about__ico {
+  margin-right: 20px;
+}
+.about__info {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252b42;
+}
+.about__sub-desc {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #737373;
+}
+/*-------------------ABOUT-BLOCK--------------------------------------*/
+
+/*-------------------ABOUT-BLOCK--------------------------------------*/
+.logos {
+  margin-bottom: 30px;
+}
+.logos__link:not(:last-child) {
+  margin-right: 25px;
+}
+/*-------------------ABOUT-BLOCK--------------------------------------*/
+.subscribe{
+  position: relative;
+  padding: 0 0 20px 0;
+}
+.subscribe::before{
+  content: "";
+  background: #252B42;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 77px;
+
+
+}
+.subscribe__title {
+  flex: 0 1 50%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  max-width: 266px;
+}
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+}
+.subscribe__body {
+  position: relative;
+  z-index: 2;
+  margin: 0 30px;
+  display: flex;
+  padding: 30px 50px;
+  align-items: center;
+  background: #17213c;
+  border-radius: 2px;
+  justify-content: space-between;
+
+}
+.subscribe__input {
+  flex: 1 1 auto;
+  min-height: 58px;
+  padding: 0 20px;
+  border-radius: 5px 0px 0px 5px;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  color: #737373;
+  border-right:0 ;
+}
+.subscribe__input:focus{
+  color:#111
+}
+.subscribe__btn {
+  background: #ff7b47;
+  border: 1px solid #e6e6e6;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+  min-height: 58px;
+  color:#fff;
+  cursor: pointer;
+}
+/*----------FOOTER---------------------------------------*/
